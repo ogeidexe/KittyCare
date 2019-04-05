@@ -1,8 +1,5 @@
-import javax.servlet.*;
-import javax.servlet.http.*;
-import java.io.*;
-import java.sql.*;
-//kflgfdkjgfkdljgfdl
+import javax.servlet.http.HttpServlet;
+@SuppressWarnings("serial")
 public class TesteServlet extends HttpServlet   {
 	public void doGet(){
 		
