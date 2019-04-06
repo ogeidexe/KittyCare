@@ -1,0 +1,25 @@
+﻿CREATE TABLE cliente(
+id_cliente SERIAL,
+nomeDono VARCHAR(40) PRIMARY KEY,
+cpf INTEGER NOT NULL,
+endereco VARCHAR(40) NOT NULL,
+fone INTEGER NOT NULL,
+servico VARCHAR(40) NOT NULL
+);
+
+CREATE TABLE gato(
+id_gato SERIAL PRIMARY KEY,
+nomeGato VARCHAR(40) NOT NULL,
+peso FLOAT NOT NULL,
+sexo VARCHAR(40) NOT NULL,
+idade INTEGER NOT NULL,
+faseVida VARCHAR(40) NOT NULL,
+raca VARCHAR(40) NOT NULL,
+antrabica VARCHAR(40) NOT NULL,
+castrado VARCHAR(40) NOT NULL,
+nomeDono VARCHAR(40) NOT NULL,
+
+FOREIGN KEY(nomeDono) REFERENCES cliente(nomeDono)
+);
+
+
